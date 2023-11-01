@@ -3,6 +3,7 @@ services:
     image: mysql
     volumes:
       - mysql-data:/var/lib/mysql
+      - ./test.txt:/test.txt
     environment:
       MYSQL_ROOT_PASSWORD: secret
 
